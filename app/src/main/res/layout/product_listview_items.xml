@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        card_view:cardCornerRadius="@dimen/_2sdp"
+        card_view:cardElevation="@dimen/_2sdp">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/mainRelativeLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:id="@+id/img1Layout"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_100sdp">
+
+                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/attendaseListImageAndTittleContentLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:id="@+id/studentImageRelativeLayout"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="@dimen/_100sdp">
+
+                        <ImageView
+                            android:id="@+id/productImage"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_margin="@dimen/_5sdp" />
+
+                        <ProgressBar
+                            android:id="@+id/loading"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/attendaseContentRelativeLayout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/studentImageRelativeLayout">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_10sdp">
+
+                            <TextView
+                                android:id="@+id/lblProductName"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Product Name"
+                                android:textColor="@color/black" />
+
+                            <TextView
+                                android:id="@+id/lblPriceTag"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/lblProductName"
+                                android:text="Rs." />
+
+                            <TextView
+                                android:id="@+id/lblPrice"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/lblProductName"
+                                android:layout_toRightOf="@id/lblPriceTag"
+                                android:text="9999" />
+
+                            <TextView
+                                android:id="@+id/lblRatings"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/lblPrice"
+                                android:padding="@dimen/_2sdp"
+                                android:text="Ratings : *****" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                    <com.like.LikeButton
+                        android:layout_margin="@dimen/_5sdp"
+                        android:padding="@dimen/_5sdp"
+                        android:layout_alignParentRight="true"
+                        app:icon_type="heart"
+                        app:icon_size="@dimen/_45sdp"
+                        android:id="@+id/btnWishList"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </RelativeLayout>
+
+            </FrameLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

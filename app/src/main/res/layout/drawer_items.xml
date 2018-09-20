@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+    <ImageView
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_16sdp"
+            android:id="@+id/drawerItemIcon"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginLeft="@dimen/_16sdp"/>
+
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/drawerItemText"
+              android:layout_marginLeft="@dimen/_30sdp"
+              android:layout_toRightOf="@+id/drawerItemIcon"
+              android:textColor="@color/gray300"
+              android:textAppearance="?android:attr/textAppearanceListItemSmall"
+              android:layout_marginTop="@dimen/_15sdp"
+              android:layout_marginBottom="@dimen/_24sdp"/>
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_below="@+id/drawerItemText">
+        <View
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:id="@+id/drawerDivider"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray400"/>
+    </FrameLayout>
+</RelativeLayout>

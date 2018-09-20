@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_2sdp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp">
+
+        <TextView
+            android:id="@+id/lblRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/goodRating"
+            android:layout_margin="@dimen/_5sdp"
+            android:padding="@dimen/_5sdp"
+            android:text="4.2"
+            android:textSize="@dimen/subTextSize" />
+
+        <TextView
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblPostDate"
+            android:text="12 dec 2017" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lblRating"
+            android:id="@+id/lblReview"
+            android:text="review of product"
+            android:textSize="@dimen/subTextSize"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblUserName"
+            android:text="Pratik Sonawane"
+            android:layout_below="@+id/lblReview"
+            android:textColor="@color/userNameBlue"
+            android:textSize="@dimen/subTextSize"/>
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/gray200"/>
+
+</LinearLayout>

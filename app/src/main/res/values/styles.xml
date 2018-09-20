@@ -1,0 +1,57 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="drawerArrowStyle">@style/DrawerHamburgerStyle</item>
+
+        <!-- For ripple effect -->
+        <item name="android:colorControlHighlight" tools:targetApi="lollipop">@color/refresh_progress_2</item>
+
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="cardTheme">
+        <item name="android:textColorHint">@color/white</item>//hint color And Label Color in False State
+        <item name="colorAccent">@color/orange500</item> //Label color in True State And Bar Color False And True State
+        <item name="colorControlNormal">@color/black</item>
+        <item name="colorControlActivated">@color/orange500</item>
+    </style>
+
+    <style name="AlertDialogCustom" parent="Theme.AppCompat.Light">
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">sans-serif-condensed</item>
+        <item name="android:textStyle">bold|italic</item>
+    </style>
+
+    <style name="DrawerHamburgerStyle" parent="@style/Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.Transparent" parent="AppTheme">
+        <!-- Style for the second activity -->
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@color/orange500</item>
+        <item name="android:windowDrawsSystemBarBackgrounds" tools:targetApi="lollipop">true</item>
+    </style>
+
+
+    <style name="PaymentDialog" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+</resources>

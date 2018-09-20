@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:layout_marginTop="@dimen/_2sdp"
+    tools:context=".LuckyDraw">
+
+    <RelativeLayout
+        android:id="@+id/luckySpinLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/_20sdp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp">
+
+                <com.bluehomestudio.luckywheel.WheelView
+                    android:id="@+id/wv_main_wheel"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <ImageView
+                    android:id="@+id/iv_arrow"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/arrow" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/paymentDetailsLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/priceDetailsLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    card_view:cardCornerRadius="@dimen/_2sdp"
+                    card_view:cardElevation="@dimen/_2sdp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_10sdp">
+
+                        <RelativeLayout
+                            android:id="@+id/msgLayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_10sdp">
+
+                            <TextView
+                                android:id="@+id/txtMsg"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Msg of Lucky draw wheel."
+                                android:textColor="@color/lowRating" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/msgLayout"
+                            android:layout_margin="@dimen/_3sdp">
+
+                            <RelativeLayout
+                                android:id="@+id/lblPriceDetailsLayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/lblPriceDetails"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Price Details"
+                                    android:textColor="@color/userNameBlue"
+                                    android:textSize="@dimen/headingTextSize" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_2sdp"
+                                    android:layout_below="@+id/lblPriceDetails"
+                                    android:background="@color/userNameBlue" />
+
+                            </RelativeLayout>
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/lblPriceDetailsLayout"
+                                android:layout_margin="@dimen/_3sdp">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+                                    <LinearLayout
+                                        android:id="@+id/headingLayout"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="@dimen/_3sdp"
+                                        android:orientation="horizontal">
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="horizontal">
+                                            <LinearLayout
+                                                android:layout_width="0dp"
+                                                android:layout_weight="5"
+                                                android:layout_height="wrap_content"
+                                                android:orientation="vertical">
+
+                                                <TextView
+                                                    android:textStyle="bold"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="Product Name" />
+                                            </LinearLayout>
+                                            <LinearLayout
+                                                android:layout_width="0dp"
+                                                android:layout_weight="2"
+                                                android:layout_height="wrap_content"
+                                                android:orientation="vertical">
+                                                <TextView
+                                                    android:textStyle="bold"
+                                                    android:layout_gravity="end"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="Price" />
+                                            </LinearLayout>
+                                            <LinearLayout
+                                                android:layout_width="0dp"
+                                                android:layout_weight="1"
+                                                android:layout_height="wrap_content"
+                                                android:orientation="vertical">
+                                                <TextView
+                                                    android:textStyle="bold"
+                                                    android:layout_gravity="end"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="Qty" />
+                                            </LinearLayout>
+                                            <LinearLayout
+                                                android:layout_width="0dp"
+                                                android:layout_weight="2"
+                                                android:layout_height="wrap_content"
+                                                android:orientation="vertical">
+                                                <TextView
+                                                    android:textStyle="bold"
+                                                    android:layout_gravity="end"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="Total" />
+                                            </LinearLayout>
+                                        </LinearLayout>
+                                    </LinearLayout>
+                                    <View
+                                        android:background="@color/gray300"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/_1sdp"
+                                        android:id="@+id/view1Divider"/>
+                                    <LinearLayout
+                                        android:id="@+id/rootLayout"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="@dimen/_2sdp"
+                                        android:orientation="horizontal">
+                                        <LinearLayout
+                                            android:id="@+id/dynamicProductNameLayout"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="horizontal">
+                                            <LinearLayout
+                                                android:id="@+id/nameLayout"
+                                                android:layout_width="0dp"
+                                                android:layout_weight="5"
+                                                android:layout_height="wrap_content"
+                                                android:orientation="vertical">
+                                            </LinearLayout>
+                                            <LinearLayout
+                                                android:id="@+id/priceLayout"
+                                                android:layout_width="0dp"
+                                                android:layout_weight="2"
+                                                android:layout_height="wrap_content"
+                                                android:orientation="vertical">
+                                            </LinearLayout>
+                                            <LinearLayout
+                                                android:id="@+id/qtyLayout"
+                                                android:layout_width="0dp"
+                                                android:layout_weight="1"
+                                                android:layout_height="wrap_content"
+                                                android:orientation="vertical">
+                                            </LinearLayout>
+                                            <LinearLayout
+                                                android:id="@+id/totalPriceLayout"
+                                                android:layout_width="0dp"
+                                                android:layout_weight="2"
+                                                android:layout_height="wrap_content"
+                                                android:orientation="vertical">
+                                            </LinearLayout>
+                                        </LinearLayout>
+                                    </LinearLayout>
+                                    <View
+                                        android:background="@color/gray300"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/_1sdp"/>
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+                                        <TextView
+                                            android:id="@+id/lblAllTotal"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_margin="@dimen/_2sdp"
+                                            android:textColor="@color/black"
+                                            android:text="Total" />
+
+                                        <TextView
+                                            android:id="@+id/txtAllTotal"
+                                            android:textColor="@color/black"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_margin="@dimen/_2sdp"
+                                            android:text="50" />
+
+                                        <TextView
+                                            android:layout_below="@+id/lblAllTotal"
+                                            android:id="@+id/lblLuckyDrawAmount"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_margin="@dimen/_2sdp"
+                                            android:text="Lucky Draw Amount" />
+
+                                        <TextView
+                                            android:layout_below="@+id/lblAllTotal"
+                                            android:id="@+id/txtLuckyDrawAmount"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_margin="@dimen/_2sdp"
+                                            android:text="50" />
+
+                                        <TextView
+                                            android:id="@+id/lblAllProductDelCharges"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@+id/lblLuckyDrawAmount"
+                                            android:layout_margin="@dimen/_2sdp"
+                                            android:text="Delivery Charges" />
+
+                                        <TextView
+                                            android:id="@+id/txtAllProductDelCharges"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_below="@+id/lblLuckyDrawAmount"
+                                            android:layout_margin="@dimen/_2sdp"
+                                            android:text="120" />
+
+                                        <View
+                                            android:id="@+id/viewDivider"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0.5dp"
+                                            android:layout_below="@+id/lblAllProductDelCharges"
+                                            android:background="@color/gray400" />
+
+                                        <TextView
+                                            android:id="@+id/lblAmountPayable"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@+id/viewDivider"
+                                            android:layout_margin="@dimen/_2sdp"
+                                            android:text="Amount Payable"
+                                            android:textStyle="bold"
+                                            android:textSize="@dimen/_14sdp"
+                                            android:textColor="@color/black" />
+
+                                        <TextView
+                                            android:id="@+id/txtAmountPayable"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_below="@+id/viewDivider"
+                                            android:layout_margin="@dimen/_2sdp"
+                                            android:text="Rs.5690"
+                                            android:textSize="@dimen/_14sdp"
+                                            android:textStyle="bold"
+                                            android:textColor="@color/black" />
+                                    </RelativeLayout>
+
+
+                                </LinearLayout>
+
+                            </RelativeLayout>
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnSpin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/ripple_coloraccent_bg"
+        android:text="Try Your Luck"
+        android:textColor="@color/colorPrimary" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/ripple_orange_bg"
+        android:text="Submit"
+        android:textColor="@color/colorPrimary"
+        android:visibility="gone" />
+
+</RelativeLayout>

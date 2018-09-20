@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_250sdp"
+    app:ignore="NamespaceTypo">
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_3sdp"
+        android:layout_marginLeft="@dimen/_2sdp"
+        android:layout_marginRight="@dimen/_2sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        card_view:cardElevation="@dimen/_15sdp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/productImage2">
+
+            <FrameLayout
+                android:id="@+id/img1Layout"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_250sdp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:scaleType="fitXY"
+                        android:id="@+id/productImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_250sdp"/>
+
+                    <ProgressBar
+                        android:id="@+id/loading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true" />
+
+                    <!--<ImageButton-->
+                        <!--android:id="@+id/btnWishList"-->
+                        <!--android:layout_width="@dimen/_15sdp"-->
+                        <!--android:layout_height="@dimen/_15sdp"-->
+                        <!--android:layout_alignParentRight="true"-->
+                        <!--android:layout_margin="@dimen/_10sdp"-->
+                        <!--android:padding="@dimen/_10sdp" />-->
+
+                    <com.like.LikeButton
+                        android:padding="@dimen/_5sdp"
+                        android:layout_alignParentRight="true"
+                        app:icon_type="heart"
+                        app:icon_size="@dimen/_45sdp"
+                        android:id="@+id/btnWishList"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/transparent">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_10sdp">
+
+                            <TextView
+                                android:id="@+id/lblProductName"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Product Name"
+                                android:textColor="@color/white" />
+
+                            <TextView
+                                android:id="@+id/lblPriceTag"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/lblProductName"
+                                android:text="Rs."
+                                android:textColor="@color/white" />
+
+                            <TextView
+                                android:id="@+id/lblPrice"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/lblProductName"
+                                android:layout_toRightOf="@id/lblPriceTag"
+                                android:text="9999"
+                                android:textColor="@color/white" />
+
+                            <TextView
+                                android:id="@+id/lblRatings"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_below="@+id/lblProductName"
+                                android:padding="@dimen/_2sdp"
+                                android:text="Ratings : *****"
+                                android:textColor="@color/white" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </FrameLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</android.support.design.widget.CoordinatorLayout>

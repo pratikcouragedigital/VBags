@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.mobitechs.vbags">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.apps.photos.permission.GOOGLE_PHOTOS" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <receiver
+            android:name=".internetConnectivity.NetworkChangeReceiver"
+            android:label="NetworkChangeReceiver">
+            <intent-filter>
+                <action
+                    android:name="android.net.conn.CONNECTIVITY_CHANGE"
+                    tools:ignore="BatteryLife" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".firebase.MyFirebaseMesagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_test_dduEpP4jtNYfPz" />
+
+        <activity
+            android:name=".Splash_Screen"
+            android:label="@string/app_name"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <activity android:name=".internetConnectivity.NotifyNetworkConnectionMessage" />
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" />
+        <activity android:name=".Product_List" />
+        <activity android:name=".PaymentActivity" />
+        <activity
+            android:name="com.razorpay.CheckoutActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name=".Product_List_Details"
+            android:label="Product Lit" />
+        <activity
+            android:name=".WishList"
+            android:label="Wish List"
+            android:theme="@style/AppTheme.Transparent" />
+        <activity
+            android:name=".My_Orders"
+            android:label="My Order" />
+        <activity
+            android:name=".Account"
+            android:label="Account" />
+        <activity
+            android:name=".Cart_List"
+            android:label="Cart" />
+        <activity
+            android:name=".My_Orders_Details"
+            android:label="My Orders" />
+        <activity
+            android:name=".Add_Ratings_Reviews"
+            android:label="Add Review" />
+        <activity
+            android:name=".Register"
+            android:label="Register"
+            android:noHistory="true" />
+        <activity
+            android:name=".Forgot_Password"
+            android:label="Email Verifying"
+            android:noHistory="true" />
+        <activity
+            android:name=".Set_Password"
+            android:label="Set New Password"
+            android:noHistory="true" />
+        <activity
+            android:name=".DeliveryAddressDetails"
+            android:label="Delivery Address" />
+        <activity
+            android:name=".Add_Product"
+            android:label="Add Product" />
+        <activity
+            android:name=".Generated_Order_List"
+            android:label="Generated Orders" />
+        <activity
+            android:name=".Add_Category"
+            android:label="Add Category" />
+        <activity
+            android:name=".Generated_Order_Details"
+            android:label="Details" />
+        <activity
+            android:name=".My_Custom_Bag"
+            android:label="Customise Your Bags" />
+        <activity android:name=".LuckyDraw" />
+        <activity android:name=".Admin_Rights_Add" />
+        <activity
+            android:name=".Add_Pattern_Material_Handle"
+            android:label="Add Images" />
+
+        <activity android:name=".Notification" />
+        <activity android:name=".Notification_Add" android:label="Add Notification"/>
+    </application>
+
+</manifest>

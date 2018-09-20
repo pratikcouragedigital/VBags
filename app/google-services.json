@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "728047561620",
+    "firebase_url": "https://vbags-c8dd4.firebaseio.com",
+    "project_id": "vbags-c8dd4",
+    "storage_bucket": "vbags-c8dd4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:728047561620:android:c5cf894ee24f3d5f",
+        "android_client_info": {
+          "package_name": "com.mobitechs.vbags"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "728047561620-k23cnhnk2hgoobqundtlmo5tefgqn6b2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDb7XSYPav6HbbbHwCTQdZ9P4b6rx9y7hE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

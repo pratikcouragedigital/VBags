@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#48C3D9</color>
+    <color name="holo_gray_light">#33999999</color>
+    <color name="white">#ffffff</color>
+    <color name="transparent">#80000000</color>
+    <color name="borderLine">#D7CCC8</color>
+    <color name="black">#000000</color>
+    <color name="logo_light">#48C3D9</color>
+    <color name="logo_Dark">#2C95AB</color>
+    <color name="orange500">#FF9800</color>
+    <color name="blue500">#2196F3</color>
+
+    <color name="edittxtcolor">#616161</color>
+    <color name="gray400">#BDBDBD</color>
+    <color name="gray300">#e0e0e0</color>
+    <color name="gray200">#EEEEEE</color>
+    <color name="gray100">#f5f5f5</color>
+    <color name="gray50">#ECEFF1</color>
+
+    <color name="cardBackground">#E0E0E0</color>
+    <color name="userNameBlue">#FF3544EC</color>
+
+    <color name="mediumRating">#FF9800</color>
+    <color name="lowRating">#F44336</color>
+    <color name="goodRating">#4CAF50</color>
+
+
+    <color name="refresh_progress_1">#0266C8</color>
+    <color name="refresh_progress_2">#F90101</color>
+    <color name="Lime500">#CDDC39</color>
+    <color name="refresh_progress_4">#00933B</color>
+    <color name="dot_dark_screen1">#d1395c</color>
+    <color name="refresh_progress_3">#F2B50F</color>
+    <color name="thirdFabBtn">#FF5722</color>
+    <color name="dot_dark_screen2">#76FF03</color>
+</resources>

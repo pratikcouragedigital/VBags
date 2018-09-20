@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/_2sdp">
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="@dimen/_1sdp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        card_view:cardElevation="@dimen/_2sdp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/cardLayout">
+
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_50sdp"
+                android:id="@+id/productRatingBar"
+                android:numStars="5"
+                android:stepSize="1.0" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textInputLayoutFeedback"
+                android:theme="@style/cardTheme"
+                android:layout_below="@+id/productRatingBar">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:id="@+id/feedbackOfUser"
+                    android:hint="Please write your product review here."
+                    android:layout_gravity="center_horizontal"
+                    android:layout_alignParentStart="true"
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/descriptionTextSize"
+                    android:layout_marginTop="@dimen/_9sdp"
+                    android:layout_alignParentLeft="true" />
+            </android.support.design.widget.TextInputLayout>
+            <Button
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:text="Submit"
+                android:id="@+id/feedbackSubmit"
+                android:layout_below="@+id/textInputLayoutFeedback"
+                android:layout_centerHorizontal="true"
+                android:background="@null"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:textSize="@dimen/subTextSize"
+                android:textColor="@color/colorAccent"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

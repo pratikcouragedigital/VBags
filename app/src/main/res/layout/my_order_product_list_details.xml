@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/_2sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/status"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.2"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools">
+
+            <RelativeLayout
+                android:padding="@dimen/_5sdp"
+                android:id="@+id/OrderDateNIdLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/lblOrderId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OrderId: "
+                    android:textColor="@color/lowRating" />
+
+                <TextView
+                    android:id="@+id/txtOrderId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/lblOrderId"
+                    android:text="10001"
+                    android:textColor="@color/lowRating" />
+
+                <TextView
+                    android:id="@+id/txtDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="10-Dec-2017"
+                    android:textColor="@color/lowRating" />
+            </RelativeLayout>
+
+            <com.shuhart.stepview.StepView
+                android:layout_below="@+id/OrderDateNIdLayout"
+                android:id="@+id/step_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                app:sv_animationType="All"
+                app:sv_stepPadding="12dp"
+                app:sv_steps="@array/steps"
+                app:sv_typeface="@font/iran_sans_mobile" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7.8"
+            android:fitsSystemWindows="true"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/status">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/orderDetailsLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:id="@+id/orderIdLayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_5sdp">
+
+                            <!--<android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_margin="@dimen/_10sdp"-->
+                            <!--card_view:cardCornerRadius="@dimen/_1sdp"-->
+                            <!--card_view:cardElevation="@dimen/_12sdp">-->
+
+
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                            </RelativeLayout>
+
+                            <!--</android.support.v7.widget.CardView>-->
+                        </RelativeLayout>
+
+                        <View
+                            android:id="@+id/view"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_2sdp"
+                            android:background="@color/borderLine" />
+
+                        <RelativeLayout
+                            android:id="@+id/productDetailsLayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                card_view:cardCornerRadius="@dimen/_2sdp"
+                                card_view:cardElevation="@dimen/_2sdp">
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/_10sdp">
+
+                                    <RelativeLayout
+                                        android:id="@+id/lblProductDetailsLayout"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:id="@+id/lblProductDetails"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="Product Details"
+                                            android:textColor="@color/userNameBlue"
+                                            android:textSize="@dimen/headingTextSize" />
+
+                                        <View
+                                            android:id="@+id/view1"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="@dimen/_2sdp"
+                                            android:layout_below="@+id/lblProductDetails"
+                                            android:background="@color/userNameBlue" />
+
+                                    </RelativeLayout>
+
+                                    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                        android:id="@+id/imageAndTittleContentLayout"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/lblProductDetailsLayout">
+
+                                        <android.support.v7.widget.RecyclerView
+                                            android:id="@+id/productListRecyclerView"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent" />
+
+                                    </RelativeLayout>
+
+                                </RelativeLayout>
+                            </android.support.v7.widget.CardView>
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_2sdp"
+                            android:background="@color/borderLine" />
+
+                        <RelativeLayout
+                            android:id="@+id/priceDetailsLayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                card_view:cardCornerRadius="@dimen/_2sdp"
+                                card_view:cardElevation="@dimen/_2sdp">
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/_10sdp">
+
+                                    <RelativeLayout
+                                        android:id="@+id/lblPriceDetailsLayout"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:id="@+id/lblPriceDetails"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="Price Details"
+                                            android:textColor="@color/userNameBlue"
+                                            android:textSize="@dimen/headingTextSize" />
+
+                                        <View
+                                            android:layout_width="match_parent"
+                                            android:layout_height="@dimen/_2sdp"
+                                            android:layout_below="@+id/lblPriceDetails"
+                                            android:background="@color/userNameBlue" />
+
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/lblPriceDetailsLayout"
+                                        android:layout_margin="@dimen/margin">
+
+                                        <RelativeLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content">
+
+                                            <TextView
+                                                android:id="@+id/lblAllProductPrice"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_margin="@dimen/_5sdp"
+                                                android:text="Product Price" />
+
+                                            <TextView
+                                                android:id="@+id/txtAllProductQty"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_margin="@dimen/_5sdp"
+                                                android:layout_toRightOf="@+id/lblAllProductPrice"
+                                                android:text="(3 items)" />
+
+                                            <TextView
+                                                android:id="@+id/txtAllProductPrice"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignParentEnd="true"
+                                                android:layout_margin="@dimen/_5sdp"
+                                                android:text="Rs.5570" />
+
+                                            <TextView
+                                                android:id="@+id/lblLuckyDrawAmount"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_below="@+id/lblAllProductPrice"
+                                                android:layout_margin="@dimen/_5sdp"
+                                                android:text="Lucky Draw Amount" />
+
+                                            <TextView
+                                                android:id="@+id/txtLuckyDrawAmount"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignParentEnd="true"
+                                                android:layout_below="@+id/lblAllProductPrice"
+                                                android:layout_margin="@dimen/_5sdp"
+                                                android:text="Rs.50" />
+
+                                            <TextView
+                                                android:id="@+id/lblAllProductDelCharges"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_below="@+id/lblLuckyDrawAmount"
+                                                android:layout_margin="@dimen/_5sdp"
+                                                android:text="Delivery Charges" />
+
+                                            <TextView
+                                                android:id="@+id/txtAllProductDelCharges"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignParentEnd="true"
+                                                android:layout_below="@+id/lblLuckyDrawAmount"
+                                                android:layout_margin="@dimen/_5sdp"
+                                                android:text="Rs.120" />
+
+                                            <View
+                                                android:id="@+id/viewDivider"
+                                                android:layout_below="@+id/lblAllProductDelCharges"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="0.5dp"
+                                                android:background="@color/gray300"/>
+                                            <TextView
+                                                android:id="@+id/lblAmountPayable"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_below="@+id/viewDivider"
+                                                android:layout_margin="@dimen/_5sdp"
+                                                android:text="Amount Payable"
+                                                android:textColor="@color/black" />
+
+                                            <TextView
+                                                android:id="@+id/txtAmountPayable"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignParentEnd="true"
+                                                android:layout_below="@+id/viewDivider"
+                                                android:layout_margin="@dimen/_5sdp"
+                                                android:text="Rs.5690"
+                                                android:textColor="@color/black" />
+                                        </RelativeLayout>
+
+                                    </RelativeLayout>
+
+                                </RelativeLayout>
+                            </android.support.v7.widget.CardView>
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_2sdp"
+                            android:background="@color/borderLine" />
+
+                        <RelativeLayout
+                            android:id="@+id/shippingDetailsLayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                card_view:cardCornerRadius="@dimen/_2sdp"
+                                card_view:cardElevation="@dimen/_2sdp">
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/_10sdp">
+
+                                    <RelativeLayout
+                                        android:id="@+id/lblShippingDetailsLayout"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:id="@+id/lblShippingDetails"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="Shipping Details"
+                                            android:textColor="@color/userNameBlue"
+                                            android:textSize="@dimen/headingTextSize" />
+
+                                        <View
+                                            android:layout_width="match_parent"
+                                            android:layout_height="@dimen/_2sdp"
+                                            android:layout_below="@+id/lblShippingDetails"
+                                            android:background="@color/userNameBlue" />
+
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/lblShippingDetailsLayout"
+                                        android:layout_margin="@dimen/margin">
+
+                                        <RelativeLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content">
+
+                                            <TextView
+                                                android:id="@+id/txtUserName"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content" />
+
+                                            <TextView
+                                                android:id="@+id/txtUserAddress"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_below="@+id/txtUserName" />
+
+                                            <TextView
+                                                android:id="@+id/txtUserMobileNo"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_below="@+id/txtUserAddress" />
+
+                                            <TextView
+                                                android:id="@+id/txtUserEmails"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_below="@+id/txtUserMobileNo" />
+                                        </RelativeLayout>
+                                    </RelativeLayout>
+                                </RelativeLayout>
+                            </android.support.v7.widget.CardView>
+                        </RelativeLayout>
+
+                    </LinearLayout>
+                </RelativeLayout>
+            </ScrollView>
+        </RelativeLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

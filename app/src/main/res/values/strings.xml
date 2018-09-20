@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">VBags</string>
+    <string name="strForgotPassword"><u>FORGOT PASSWORD ?</u></string>
+    <string name="srtDntHaveVC"><u>Dont have verification code ?</u></string>
+    <string name="freeDeliveryOn">1600</string>
+    <string name="fabBehaviour">com.mobitechs.vbags.behaviours.ScrollAwareFABBehavior</string>
+
+    <!--<string name="url">"http://192.168.0.103/VBagsAPI/php/api/vbags_api.php"</string>-->
+    <string name="url">"http://mobitechs.in/VBagsAPI/api/vbags_api.php"</string>
+    <string name="imagePath">"http://mobitechs.in/VBagsAPI/"</string>
+
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+    <string-array name="steps">
+        <item>Ordered</item>
+        <item>Confirmed</item>
+        <item>Packed</item>
+        <item>Shipped</item>
+        <item>Delivered</item>
+    </string-array>
+
+
+    <!--https://www.stackcp.com/login-->
+</resources>

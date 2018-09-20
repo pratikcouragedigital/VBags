@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin"
+        card_view:cardElevation="@dimen/_10sdp">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/mainRelativeLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/dateLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent">
+
+                <TextView
+                    android:id="@+id/lblOrderId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_5sdp"
+                    android:text="Order Id: "
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/descriptionTextSize"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtOrderId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/lblOrderId"
+                    android:padding="@dimen/_5sdp"
+                    android:text="1207"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/descriptionTextSize"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:padding="@dimen/_5sdp"
+                    android:text="12-jan-2017"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/descriptionTextSize"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/orderContentLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dateLayout">
+
+
+                <RelativeLayout
+                    android:id="@+id/contentRelativeLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_5sdp">
+
+                    <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="vertical">-->
+
+                    <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content">-->
+
+                    <!--<TextView-->
+                    <!--android:id="@+id/lblStatus"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="@dimen/_5sdp"-->
+                    <!--android:layout_marginTop="@dimen/_2sdp"-->
+                    <!--android:layout_weight="5"-->
+                    <!--android:text="Order Status "-->
+                    <!--android:textSize="@dimen/descriptionTextSize" />-->
+
+                    <!--<TextView-->
+                    <!--android:id="@+id/txtDeliveryStatus"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="@dimen/_5sdp"-->
+                    <!--android:layout_marginTop="@dimen/_2sdp"-->
+                    <!--android:text="Pending"-->
+                    <!--android:textSize="@dimen/descriptionTextSize" />-->
+                    <!--</LinearLayout>-->
+
+                    <!--&lt;!&ndash;<LinearLayout&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_height="wrap_content">&ndash;&gt;-->
+
+                    <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:id="@+id/lblDelCharges"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_width="0dp"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_marginLeft="@dimen/_5sdp"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_marginTop="@dimen/_2sdp"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_weight="5"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:text="Delivery Charges "&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:textSize="@dimen/descriptionTextSize" />&ndash;&gt;-->
+
+                    <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:id="@+id/txtDelCharges"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_width="0dp"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_marginLeft="@dimen/_5sdp"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_marginTop="@dimen/_2sdp"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_weight="5"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:gravity="end"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:text="100 "&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:textSize="@dimen/descriptionTextSize" />&ndash;&gt;-->
+                    <!--&lt;!&ndash;</LinearLayout>&ndash;&gt;-->
+
+                    <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content">-->
+
+                    <!--<TextView-->
+                    <!--android:id="@+id/lblTotalPrice"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="@dimen/_5sdp"-->
+                    <!--android:layout_marginTop="@dimen/_2sdp"-->
+                    <!--android:layout_weight="5"-->
+                    <!--android:text="Total Price "-->
+                    <!--android:textColor="@color/black"-->
+                    <!--android:textSize="@dimen/descriptionTextSize"-->
+                    <!--android:textStyle="bold" />-->
+
+                    <!--<TextView-->
+                    <!--android:id="@+id/txtTotalPrice"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="@dimen/_5sdp"-->
+                    <!--android:layout_marginTop="@dimen/_2sdp"-->
+                    <!--android:layout_weight="5"-->
+                    <!--android:gravity="end"-->
+                    <!--android:text="400 "-->
+                    <!--android:textColor="@color/black"-->
+                    <!--android:textSize="@dimen/descriptionTextSize"-->
+                    <!--android:textStyle="bold" />-->
+                    <!--</LinearLayout>-->
+                    <!--</LinearLayout>-->
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_2sdp"
+                android:text="Shipping Details"
+                android:textColor="@color/orange500" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@color/gray300" />
+
+            <LinearLayout
+                android:id="@+id/userDetailsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/txtName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_2sdp" />
+
+                <TextView
+                    android:id="@+id/txtAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_2sdp" />
+
+                <TextView
+                    android:id="@+id/txtMobileNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_2sdp" />
+
+                <TextView
+                    android:id="@+id/txtEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_2sdp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/confirmCancelLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp">
+
+                <RelativeLayout
+                    android:id="@+id/relLayoutStatus"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/ripple_black_bg">
+
+                    <!--<Button-->
+                        <!--android:id="@+id/btnConfirm"-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:background="@color/colorPrimary"-->
+                        <!--android:padding="@dimen/_5sdp"-->
+                        <!--android:text="Confirm"-->
+                        <!--android:textColor="@color/colorAccent" />-->
+
+                    <TextView
+                        android:id="@+id/txtStatus"
+                        android:gravity="center"
+                        android:padding="@dimen/_5sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="ConFirm"
+                        android:textColor="@drawable/ripple_coloraccent_bg"/>
+
+                    <Spinner
+                        android:id="@+id/spinnerOrderStatus"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relLayoutTotalRs"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:background="@color/colorAccent">
+
+                    <TextView
+                        android:id="@+id/txtTotalRs"
+                        android:gravity="center"
+                        android:padding="@dimen/_5sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Total"
+                        android:textColor="@color/black"/>
+
+                    <!--<Button-->
+                        <!--android:id="@+id/btnCancel"-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_weight="0.5"-->
+                        <!--android:background="@color/colorAccent"-->
+                        <!--android:padding="@dimen/_5sdp"-->
+                        <!--android:text="Cancel"-->
+                        <!--android:textColor="@color/colorPrimary" />-->
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/_2sdp"
+    tools:context=".Add_Pattern_Material_Handle">
+
+    <RelativeLayout
+        android:id="@+id/btnAddImageLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_margin="@dimen/_5sdp"
+            android:id="@+id/btnAddImages"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ripple_orange_bg"
+            android:padding="@dimen/_5sdp"
+            android:text="Add Image"
+            android:drawableStart="@drawable/ic_add_a_photo_grey_500_24dp"
+            android:drawableTint="@color/white"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_margin="@dimen/_5sdp"
+        android:layout_below="@+id/btnAddImageLayout"
+        android:id="@+id/containerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.RecyclerView
+                android:id="@+id/imageRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:paddingBottom="@dimen/_8sdp" />
+
+    </RelativeLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/_15sdp"
+        android:src="@drawable/ic_done_white_24dp"
+        app:backgroundTint="@color/colorAccent"
+        app:rippleColor="@color/lowRating"
+        app:elevation="@dimen/_6sdp"
+        app:fabSize="normal"
+        android:visibility="invisible"
+        app:layout_anchorGravity="bottom|right" />
+
+</RelativeLayout>

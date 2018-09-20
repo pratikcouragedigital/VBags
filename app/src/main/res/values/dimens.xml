@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="margin">@dimen/_5sdp</dimen>
+    <dimen name="padding">@dimen/_5sdp</dimen>
+    <dimen name="descriptionTextSize">@dimen/_12ssp</dimen>
+    <dimen name="productNameTextSize">@dimen/_16ssp</dimen>
+    <dimen name="headingTextSize">@dimen/_16ssp</dimen>
+    <dimen name="subTextSize">@dimen/_14ssp</dimen>
+    <dimen name="alertDialogListNames">17sp</dimen>
+
+    <integer name="anim_duration_very_long">1000</integer>
+    <integer name="anim_duration_long">500</integer>
+    <integer name="anim_duration_medium">300</integer>
+</resources>

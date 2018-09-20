@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradian">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/mainRelativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_15sdp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_100sdp"
+                android:id="@+id/logo"
+                android:src="@drawable/vbags_text"/>
+
+            <TextView
+                android:layout_gravity="center"
+                android:id="@+id/headingLabelViewTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding"
+                android:text="Set New Password.!!!"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/headingTextSize"
+                android:textStyle="bold"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/txtLayoutVerificationCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/cardTheme">
+
+                <EditText
+                    android:id="@+id/txtVerificationCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Verification Code"
+                    android:inputType="text"
+                    android:textSize="@dimen/_14sdp" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/txtLayoutNewPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/cardTheme">
+
+                <EditText
+                    android:id="@+id/txtNewPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="New Password"
+                    android:inputType="text"
+                    android:textSize="@dimen/_14sdp" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/txtLayoutConfirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/cardTheme">
+
+                <EditText
+                    android:id="@+id/txtConfirmPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Confirm Password"
+                    android:inputType="text"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/ripple_coloraccent_bg"
+                android:text="Submit"
+                android:textColor="@color/orange500"
+                android:padding="@dimen/_5sdp"
+                android:layout_margin="@dimen/_5sdp" />
+
+        </LinearLayout>
+
+</RelativeLayout>

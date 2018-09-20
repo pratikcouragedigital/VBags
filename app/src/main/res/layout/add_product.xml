@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/_2sdp"
+    tools:context=".Add_Product">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9"
+            android:orientation="horizontal">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/loginDetailsLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:padding="@dimen/_5sdp"
+                        android:theme="@style/cardTheme">
+
+                        <EditText
+                            android:textColor="@color/white"
+                            android:id="@+id/txtProductName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:drawablePadding="@dimen/_5sdp"
+                            android:hint="Product Name"
+                            android:textSize="@dimen/subTextSize" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:padding="@dimen/_5sdp"
+                        android:theme="@style/cardTheme">
+
+                        <EditText
+                            android:textColor="@color/white"
+                            android:id="@+id/txtProductPrice"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:drawablePadding="@dimen/_5sdp"
+                            android:hint="Price"
+                            android:inputType="number"
+                            android:textSize="@dimen/subTextSize" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/spinnerQtyLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_5sdp">
+
+                        <TextView
+                            android:id="@+id/lblCategory"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/_5sdp"
+                            android:textColor="@color/white"
+                            android:text="Category" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/lblCategory"
+                            android:background="@drawable/border"
+                            android:padding="@dimen/_5sdp">
+
+                            <Spinner
+                                android:id="@+id/spinnerCategory"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/_20sdp"
+                                 />
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:padding="@dimen/_5sdp"
+                        android:theme="@style/cardTheme">
+
+                        <EditText
+                            android:textColor="@color/white"
+                            android:id="@+id/txtShortDescription"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:drawablePadding="@dimen/_5sdp"
+                            android:hint="Short Description"
+                            android:textSize="@dimen/subTextSize" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:padding="@dimen/_5sdp"
+                        android:theme="@style/cardTheme">
+
+                        <EditText
+                            android:textColor="@color/white"
+                            android:id="@+id/txtLongDescription"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:drawablePadding="@dimen/_5sdp"
+                            android:hint="Long Description"
+                            android:textSize="@dimen/subTextSize" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:padding="@dimen/_5sdp"
+                        android:theme="@style/cardTheme">
+
+                        <EditText
+                            android:textColor="@color/white"
+                            android:id="@+id/txtColor"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:drawablePadding="@dimen/_5sdp"
+                            android:hint="Colour"
+                            android:textSize="@dimen/subTextSize" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_5sdp">
+
+                        <TextView
+                            android:id="@+id/lblSize"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/_5sdp"
+                            android:textColor="@color/white"
+                            android:text="Size" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/lblSize"
+                            android:background="@drawable/border"
+                            android:padding="@dimen/_5sdp">
+
+                            <Spinner
+                                android:id="@+id/spinnerSize"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/_20sdp" />
+                        </RelativeLayout>
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_5sdp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/img1"
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/_90sdp"
+                                android:layout_weight="0.25"
+                                android:padding="@dimen/_5sdp"
+                                android:src="@drawable/ic_add_a_photo_grey_500_24dp" />
+
+                            <ImageView
+                                android:id="@+id/img2"
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/_90sdp"
+                                android:layout_weight="0.25"
+                                android:padding="@dimen/_5sdp"
+                                android:src="@drawable/ic_add_a_photo_grey_500_24dp" />
+
+                            <ImageView
+                                android:id="@+id/img3"
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/_90sdp"
+                                android:layout_weight="0.25"
+                                android:padding="@dimen/_5sdp"
+                                android:src="@drawable/ic_add_a_photo_grey_500_24dp" />
+
+                            <ImageView
+                                android:id="@+id/img4"
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/_90sdp"
+                                android:layout_weight="0.25"
+                                android:padding="@dimen/_5sdp"
+                                android:src="@drawable/ic_add_a_photo_grey_500_24dp" />
+
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/ripple_coloraccent_bg"
+                android:text="Submit"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
